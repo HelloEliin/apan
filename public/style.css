@@ -1,0 +1,54 @@
+
+body {
+    background-color: white;
+    color: black;
+    margin: auto;
+    text-align: center;
+    font-size: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    
+
+  }
+
+  h1{
+    font-family: Impact,  Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 4.0em;
+
+   
+    
+  }
+  
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+
+  img:hover {
+    opacity: 0.5;
+  }
+
+  a {
+    color: black;
+    
+  }
+
+  input[type=submit]{
+    background-color: white;
+    border-radius: 15px;
+   
+
+  }
+
+  a {
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+    
+  }
+
+  a:hover{
+    color: gray;
+  }
