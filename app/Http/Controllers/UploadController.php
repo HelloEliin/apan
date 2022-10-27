@@ -27,17 +27,8 @@ class UploadController extends Controller
         $img = Image::make(storage_path('app/public').'/'.$image->getClientOriginalName());
 
 
+        if($request->get){
 
-        public function generateImage(){
-            $this->=$name;
-
-        }
-       
-
-        if($request->get)){
-
-
-            $this->
 
         $img->fit($width, $height);
              
