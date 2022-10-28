@@ -12,11 +12,6 @@ class UploadController extends Controller
         return view ('upload');
     }
 
-
-
-
-
-
     public function uploadFile(Request $request)
     {
 
@@ -25,12 +20,11 @@ class UploadController extends Controller
         $request->file->storeAs('public', $image->getClientOriginalName());
         $img = '../storage/' .$image->getClientOriginalName();
         $img = Image::make(storage_path('app/public').'/'.$image->getClientOriginalName());
+       
 
+        if($request->get('size') === "facebook"){
 
-        if($request->get){
-
-
-        $img->fit($width, $height);
+        $img->fit(1200, 630);
              
 
 
@@ -41,7 +35,7 @@ class UploadController extends Controller
         }
 
 
-       if($request->get('color') === "black"){
+       if($request->get('stamp') === "svart"){
 
           $watermark = Image::make(storage_path('app/public/svartlogga.png'));
            $img->insert($watermark, 'bottom-right', 10, 10);
@@ -65,5 +59,3 @@ class UploadController extends Controller
 
 
 }
-
-
