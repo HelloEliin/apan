@@ -33,7 +33,7 @@ class UploadController extends Controller
             
 
         }
-
+               
 
        if($request->get('stamp') === "svart"){
 
